@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ratatouille.ReceiptControl">
+   <children>
+      <ImageView fitHeight="748.0" fitWidth="773.0" layoutX="-7.0" layoutY="-44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/IMG_8467.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LoyaltyCardImage" fitHeight="128.0" fitWidth="135.0" layoutX="479.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/IMG_8458.JPG" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6105263233184814" green="0.3052631616592407" blue="0.4375438690185547" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="424.0" layoutY="58.0" prefHeight="34.0" prefWidth="81.0" text="Receipt" textFill="#6f2179" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.17">
+               <color>
+                  <Color red="0.7052631378173828" green="0.6843664646148682" blue="0.6843664646148682" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label layoutX="341.0" layoutY="557.0" prefHeight="34.0" prefWidth="150.0" text="Your Total Price is:" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Label>
+      <Label layoutX="295.0" layoutY="124.0" text="Kids :" textFill="#430f0f" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="295.0" layoutY="150.0" text="Pets :" textFill="#430f0f" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="278.0" layoutY="179.0" text="Order Price :" textFill="#430f0f" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="297.0" layoutY="254.0" text="Tax :" textFill="#430f0f" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="286.0" layoutY="287.0" text="Service :" textFill="#430f0f" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="494.0" layoutY="124.0" text="\$" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="493.0" layoutY="179.0" text="\$" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="493.0" layoutY="150.0" text="\$" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="493.0" layoutY="287.0" text="\$" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="577.0" layoutY="564.0" text="\$" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="KidsPrice" layoutX="389.0" layoutY="124.0" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="PetsPrice" layoutX="389.0" layoutY="150.0" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="OrderPrice" layoutX="389.0" layoutY="179.0" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="Taxs" layoutX="389.0" layoutY="254.0" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="Service" layoutX="389.0" layoutY="287.0" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="TotalPrice" layoutX="503.0" layoutY="564.0" prefHeight="20.0" prefWidth="73.0" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="Loyalty" layoutX="325.0" layoutY="502.0" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="491.0" layoutY="254.0" text="\%" textFill="#430f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="649.0" layoutY="636.0" mnemonicParsing="false" onAction="#ReviewClicked" prefHeight="53.0" prefWidth="98.0" text="Review">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label fx:id="the_order" layoutX="279.0" layoutY="220.0" textFill="#430f0f">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

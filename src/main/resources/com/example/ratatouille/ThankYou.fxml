@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ratatouille.Thankyoucontroller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/IMG_8464.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="518.0" text="Abdelrahman Elzarka">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.5">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="51.0" layoutY="533.0" text="Nadeen Medhat">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.5">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="30.0" layoutY="492.0" text="Created By:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.5">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
